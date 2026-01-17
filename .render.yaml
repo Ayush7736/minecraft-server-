@@ -4,7 +4,6 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     plan: starter
-    autoDeploy: true
     ports:
       - port: 25565
         protocol: tcp
