@@ -1,8 +1,7 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre-jammy
 
 WORKDIR /server
 
-# Download PaperMC server jar (latest version example)
 RUN apt-get update && apt-get install -y curl && \
     curl -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.20.1/builds/100/downloads/paper-1.20.1-100.jar
 
